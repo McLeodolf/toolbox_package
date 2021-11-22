@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-def plot_learning_curve(model, X, y, train_sizes=[25,50,75,100,250,500,750,1000,1150]):
+def plot_learning_curve(model, X, y, train_sizes):
 # Get train scores (R2), train sizes, and validation scores using `learning_curve`
     train_sizes, train_scores, test_scores = learning_curve(
         estimator=model, X=X, y=y, train_sizes=train_sizes, cv=5)
